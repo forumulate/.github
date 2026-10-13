@@ -13,18 +13,44 @@ there is nothing for you to deploy. Use our address or bring your own domain.
 ## Build with Forumulate
 
 Every operation is in a public OpenAPI document at `https://forumulate.com/api/openapi.json`.
-These repositories are the tooling around it:
+The full map, with a quickstart per stack, is the [SDKs and integrations guide](https://forumulate.com/guides/sdks-and-integrations).
+
+### Put Forumulate on any website
+
+Comments, a docs search box, a changelog bell and content feeds, as plain HTML tags:
+
+```html
+<script type="module" src="https://cdn.jsdelivr.net/npm/@forumulate/embed@1"></script>
+<forumulate-comments org="<org-id>" space="<space-id>"></forumulate-comments>
+```
+
+| Your stack | Package |
+| --- | --- |
+| Any site, no build step | [embed](https://github.com/forumulate/embed) · `@forumulate/embed` |
+| React · Preact · Next.js · Remix | [react](https://github.com/forumulate/react) · [preact](https://github.com/forumulate/preact) · [next](https://github.com/forumulate/next) · [remix](https://github.com/forumulate/remix) |
+| Vue · Nuxt | [vue](https://github.com/forumulate/vue) · [nuxt](https://github.com/forumulate/nuxt) |
+| Svelte/SvelteKit · Solid · Qwik · Angular | [svelte](https://github.com/forumulate/svelte) · [solid](https://github.com/forumulate/solid) · [qwik](https://github.com/forumulate/qwik) · [angular](https://github.com/forumulate/angular) |
+| Astro · Gatsby · Docusaurus · Eleventy | [astro](https://github.com/forumulate/astro) · [gatsby](https://github.com/forumulate/gatsby) · [docusaurus](https://github.com/forumulate/docusaurus) · [eleventy](https://github.com/forumulate/eleventy) |
+| Django · Flask · Rails · Laravel | [django](https://github.com/forumulate/django) · [flask](https://github.com/forumulate/flask) · [rails](https://github.com/forumulate/rails) · [laravel](https://github.com/forumulate/laravel) |
+| WordPress · Drupal · Ghost | [wordpress](https://github.com/forumulate/wordpress) · [drupal](https://github.com/forumulate/drupal) · [ghost](https://github.com/forumulate/ghost) |
+| Hugo · Jekyll · Go templates | [hugo](https://github.com/forumulate/hugo) · [jekyll](https://github.com/forumulate/jekyll) · [forumulate-go-web](https://github.com/forumulate/forumulate-go-web) |
+
+Every JavaScript package installs from npm (`npm i @forumulate/<name>`).
+
+### Manage Forumulate from code
 
 | Repository | What it is | Install |
 | --- | --- | --- |
-| [forumulate-js](https://github.com/forumulate/forumulate-js) | `@forumulate/sdk`, the typed JavaScript/TypeScript client | `npm i @forumulate/sdk` |
-| [cli](https://github.com/forumulate/cli) | `@forumulate/cli`, Forumulate from your terminal, including `forumulate doctor` | `npm i -g @forumulate/cli` |
-| [mcp](https://github.com/forumulate/mcp) | `@forumulate/mcp`, an MCP server for Claude and other agents | `npx -y @forumulate/mcp` |
-| [extension-sdk](https://github.com/forumulate/extension-sdk) | Build extensions: verify signed requests, respond with declarative UI, call the API | see the repo |
-| [templates](https://github.com/forumulate/templates) | The official space templates for docs, forums and blogs | see the repo |
+| [forumulate-js](https://github.com/forumulate/forumulate-js) | TypeScript/JavaScript SDK | `npm i @forumulate/sdk` |
+| [forumulate-python](https://github.com/forumulate/forumulate-python) | Python SDK | `pip install git+https://github.com/forumulate/forumulate-python` |
+| [forumulate-go](https://github.com/forumulate/forumulate-go) | Go SDK | `go get github.com/forumulate/forumulate-go` |
+| [cli](https://github.com/forumulate/cli) | Forumulate from your terminal | `npm i -g @forumulate/cli` |
+| [mcp](https://github.com/forumulate/mcp) | MCP server for Claude, Cursor and other agents | `npx -y @forumulate/mcp` |
+| [extension-sdk](https://github.com/forumulate/extension-sdk) | Build extensions: signed requests, declarative UI | see the repo |
+| [templates](https://github.com/forumulate/templates) | Official docs, forum, blog and changelog templates | see the repo |
 
+[![npm @forumulate/embed](https://img.shields.io/npm/v/@forumulate/embed?label=%40forumulate%2Fembed)](https://www.npmjs.com/package/@forumulate/embed)
 [![npm @forumulate/sdk](https://img.shields.io/npm/v/@forumulate/sdk?label=%40forumulate%2Fsdk)](https://www.npmjs.com/package/@forumulate/sdk)
-[![npm @forumulate/cli](https://img.shields.io/npm/v/@forumulate/cli?label=%40forumulate%2Fcli)](https://www.npmjs.com/package/@forumulate/cli)
 
 ## Links
 
