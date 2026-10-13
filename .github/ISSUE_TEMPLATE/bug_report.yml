@@ -1,0 +1,51 @@
+name: Bug report
+description: Something in this package or template doesn't work as documented.
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting. **Never paste an access token, password or private content.** If one ends up here, revoke it.
+        Security vulnerabilities go through [SECURITY.md](https://github.com/forumulate/.github/blob/main/SECURITY.md), not here.
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened
+      description: What you did, what you expected, and what happened instead.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Steps to reproduce
+      description: The smallest set of commands or code that shows the problem.
+      placeholder: |
+        1. npm i @forumulate/sdk@x.y.z
+        2. ...
+    validations:
+      required: true
+  - type: textarea
+    id: error
+    attributes:
+      label: Error output
+      description: The full error, stack trace, or HTTP status and response body. Include the request id if one was returned.
+      render: shell
+  - type: input
+    id: version
+    attributes:
+      label: Package version
+      placeholder: "@forumulate/cli 0.3.5"
+    validations:
+      required: true
+  - type: input
+    id: environment
+    attributes:
+      label: Environment
+      description: Node version, OS, and the MCP client if relevant.
+      placeholder: "Node 22.11, macOS 15"
+  - type: textarea
+    id: doctor
+    attributes:
+      label: forumulate doctor output (optional)
+      description: If you have the CLI installed, `forumulate doctor` often pinpoints auth and connectivity problems.
+      render: shell

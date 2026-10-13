@@ -1,0 +1,32 @@
+name: Feature request
+description: Suggest an improvement to this package or template.
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        For features in the hosted product itself, please post on [the community forum](https://forumulate.com/community) instead.
+  - type: textarea
+    id: problem
+    attributes:
+      label: The problem
+      description: What are you trying to do, and what gets in the way today?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: What you'd like
+      description: How you'd like it to work. Include an example call or command if it helps.
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Workarounds or alternatives you've considered
+  - type: checkboxes
+    id: contribute
+    attributes:
+      label: Contributing
+      options:
+        - label: I'd be willing to open a pull request for this.

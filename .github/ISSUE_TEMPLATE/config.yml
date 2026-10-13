@@ -1,0 +1,14 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Questions about using Forumulate
+    url: https://forumulate.com/community
+    about: Ask on the community forum. Product questions get a faster answer there than in issues.
+  - name: Bugs in the hosted product (console, reader pages, API)
+    url: https://forumulate.com/community
+    about: The hosted product isn't on GitHub. Report it on the community forum.
+  - name: Report a security vulnerability
+    url: https://github.com/forumulate/.github/blob/main/SECURITY.md
+    about: Please report it privately. Never open a public issue for a vulnerability.
+  - name: Service status
+    url: https://forumulate.com/status
+    about: Check here first if something seems to be down.
